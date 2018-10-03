@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Markdown URL Grabber</title>
+    <script src="popup.js"></script>
+    <style>
+      body {
+
+        width: 480px;
+      }
+
+      .extension {
+
+        display: flex;
+      }
+
+      .extension__input {
+
+        flex: 1 0 auto;
+        padding: 5px;
+        border: 1px solid #666;
+        border-radius: 3px;
+        background-color: transparent;
+      }
+
+      .extension__input--url {
+
+        flex-grow: 3;
+        margin-right: 10px;
+      }
+
+      .extension__input--copy {
+
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="extension">
+      <input class="extension__input extension__input--url" id="markdownLinkFormatted" />
+      <button class="extension__input extension__input--copy" id="markdownCopyBtn" type="button">Copy</button>
+    </main>
+  </body>
+</html>
